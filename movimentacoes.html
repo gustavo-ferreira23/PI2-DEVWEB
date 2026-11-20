@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Movimentações — Mercurius</title>
+  </head>
+  <body class="app-body">
+    <aside class="sidebar">
+      <a class="logo light" href="/"><span>M</span>Mercurius</a
+      ><a class="new-action active" href="/nova-movimentacao.html">＋ Nova movimentação</a>
+      <nav class="side-nav">
+        <a href="/dashboard.html"
+          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
+        ><a href="/contas.html"
+          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
+        ><a href="/cartoes.html"
+          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
+        ><a href="/produtos.html"
+          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
+        ><a class="active" href="/movimentacoes.html"
+          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
+        ><a href="/configuracoes.html"
+          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
+        >
+      </nav>
+      <div class="sync-box">
+        <svg><use href="/icons.svg#shield" /></svg>
+        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
+      </div>
+    </aside>
+    <main class="app">
+      <header class="app-header">
+        <div>
+          <h1>Movimentações</h1>
+          <p>Acompanhe compras e gastos com alimentos.</p>
+        </div>
+        <a class="profile" href="/configuracoes.html"
+          ><span>U</span>
+          <div><b>Usuário</b><small>usuario@exemplo.com</small></div></a
+        >
+      </header>
+      <div class="app-content">
+        <section class="stat-grid movement-stats">
+          <article class="stat-card orange">
+            <svg><use href="/icons.svg#card" /></svg>
+            <div>
+              <p>Gasto com alimentos</p>
+              <h3>R$ 629,73</h3>
+              <small>Neste mês</small>
+            </div>
+          </article>
+          <article class="stat-card">
+            <svg><use href="/icons.svg#box" /></svg>
+            <div>
+              <p>Compras registradas</p>
+              <h3>3</h3>
+              <small>Neste mês</small>
+            </div>
+          </article>
+        </section>
+        <div class="toolbar">
+          <div class="search">
+            <svg><use href="/icons.svg#search" /></svg><input placeholder="Buscar movimentação" />
+          </div>
+          <a class="button primary" href="/nova-movimentacao.html">＋ Nova movimentação</a>
+        </div>
+        <form class="filter-bar" action="/movimentacoes.html" method="get">
+          <div class="filter-field">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria">
+              <option value="">Todas</option>
+              <option>Alimentação</option>
+              <option>Hortifruti</option>
+              <option>Padaria</option>
+              <option>Mercearia</option>
+              <option>Transferência</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="data-inicial">De</label>
+            <input id="data-inicial" name="data-inicial" type="date" />
+          </div>
+          <div class="filter-field">
+            <label for="data-final">Até</label>
+            <input id="data-final" name="data-final" type="date" />
+          </div>
+          <div class="filter-actions">
+            <a class="button ghost" href="/movimentacoes.html">Limpar</a>
+            <button class="button outline" type="submit">Aplicar filtros</button>
+          </div>
+        </form>
+        <div class="tabs">
+          <span class="active">Todas · 5</span><span>Compras · 3</span><span>Despesas · 1</span
+          ><span>Transferências · 1</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th>Tipo</th>
+                <th>Categoria</th>
+                <th>Data</th>
+                <th>Conta / cartão</th>
+                <th>Valor</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Feira semanal</td>
+                <td><span class="tag purple">Compra</span></td>
+                <td>Hortifruti</td>
+                <td>20/06/2025</td>
+                <td>Conta principal</td>
+                <td class="negative"><b>− R$ 96,40</b></td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-movimentacao.html" aria-label="Editar movimentação"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-movimentacao.html" aria-label="Excluir movimentação"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Supermercado</td>
+                <td><span class="tag purple">Compra</span></td>
+                <td>Alimentação</td>
+                <td>19/06/2025</td>
+                <td>Cartão Azul</td>
+                <td class="negative"><b>− R$ 342,67</b></td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-movimentacao.html" aria-label="Editar movimentação"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-movimentacao.html" aria-label="Excluir movimentação"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Padaria</td>
+                <td><span class="tag red">Despesa</span></td>
+                <td>Alimentação</td>
+                <td>18/06/2025</td>
+                <td>Conta principal</td>
+                <td class="negative"><b>− R$ 47,13</b></td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-movimentacao.html" aria-label="Editar movimentação"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-movimentacao.html" aria-label="Excluir movimentação"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Valor para compras</td>
+                <td><span class="tag blue">Transferência</span></td>
+                <td>Transferência</td>
+                <td>16/06/2025</td>
+                <td>Principal → Reserva</td>
+                <td class="negative"><b>− R$ 1.000,00</b></td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-movimentacao.html" aria-label="Editar movimentação"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-movimentacao.html" aria-label="Excluir movimentação"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Empório da Vila</td>
+                <td><span class="tag purple">Compra</span></td>
+                <td>Alimentação</td>
+                <td>14/06/2025</td>
+                <td>Cartão Azul</td>
+                <td class="negative"><b>− R$ 143,53</b></td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-movimentacao.html" aria-label="Editar movimentação"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-movimentacao.html" aria-label="Excluir movimentação"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

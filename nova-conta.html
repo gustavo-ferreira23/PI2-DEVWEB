@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Adicionar conta — Mercurius</title>
+  </head>
+  <body class="app-body">
+    <aside class="sidebar">
+      <a class="logo light" href="/"><span>M</span>Mercurius</a
+      ><a class="new-action" href="/nova-movimentacao.html">＋ Nova movimentação</a>
+      <nav class="side-nav">
+        <a href="/dashboard.html"
+          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
+        ><a class="active" href="/contas.html"
+          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
+        ><a href="/cartoes.html"
+          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
+        ><a href="/produtos.html"
+          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
+        ><a href="/movimentacoes.html"
+          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
+        ><a href="/configuracoes.html"
+          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
+        >
+      </nav>
+      <div class="sync-box">
+        <svg><use href="/icons.svg#shield" /></svg>
+        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
+      </div>
+    </aside>
+    <div class="app record-app">
+      <header class="record-header">
+        <a class="logo" href="/dashboard.html"><span>M</span>Mercurius</a
+        ><a href="/contas.html">Cancelar</a>
+      </header>
+      <main class="record-main">
+        <div class="record-title">
+          <a href="/contas.html">← Voltar para contas</a>
+          <h1>Adicionar conta</h1>
+          <p>Cadastre uma conta bancária, carteira ou investimento.</p>
+        </div>
+        <form class="record-card" action="/contas.html">
+          <div class="form-grid">
+            <label class="full"
+              >Descrição da conta<input
+                required
+                maxlength="150"
+                placeholder="Ex.: Conta principal" /></label
+            ><label
+              >Instituição<select>
+                <option>Banco Aurora</option>
+                <option>Banco Horizonte</option>
+                <option>Instituição personalizada</option>
+              </select></label
+            ><label
+              >Tipo de conta<select>
+                <option>Corrente</option>
+                <option>Poupança</option>
+                <option>Salário</option>
+                <option>Investimento</option>
+                <option>Carteira</option>
+                <option>Outro</option>
+              </select></label
+            ><label class="full"
+              >Saldo atual<input type="number" required step="0.01" value="0.00"
+            /></label>
+          </div>
+          <div class="record-actions">
+            <a class="button outline" href="/contas.html">Cancelar</a
+            ><button class="button primary">Salvar conta</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

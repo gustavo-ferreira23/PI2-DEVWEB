@@ -1,0 +1,19 @@
+.form-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.privacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid #e7edf1;
+  color: #849099;
+  font-size: 11px;
+}
+.privacy svg {
+  width: 17px;
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Excluir conta — Mercurius</title>
+  </head>
+  <body class="app-body">
+    <aside class="sidebar">
+      <a class="logo light" href="/"><span>M</span>Mercurius</a
+      ><a class="new-action" href="/nova-movimentacao.html">＋ Nova movimentação</a>
+      <nav class="side-nav">
+        <a href="/dashboard.html"
+          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
+        ><a class="active" href="/contas.html"
+          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
+        ><a href="/cartoes.html"
+          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
+        ><a href="/produtos.html"
+          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
+        ><a href="/movimentacoes.html"
+          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
+        ><a href="/configuracoes.html"
+          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
+        >
+      </nav>
+      <div class="sync-box">
+        <svg><use href="/icons.svg#shield" /></svg>
+        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
+      </div>
+    </aside>
+    <div class="app record-app">
+      <header class="record-header">
+        <a class="logo" href="/dashboard.html"><span>M</span>Mercurius</a
+        ><a href="/contas.html">Cancelar</a>
+      </header>
+      <main class="record-main">
+        <section class="record-card danger-card">
+          <svg><use href="/icons.svg#trash" /></svg>
+          <h1>Excluir esta conta?</h1>
+          <p>
+            A conta selecionada será removida permanentemente. Verifique antes se há cartões ou
+            movimentações associados.
+          </p>
+          <div class="record-actions">
+            <a class="button outline" href="/contas.html">Cancelar</a
+            ><a class="button danger" href="/contas.html">Confirmar exclusão</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

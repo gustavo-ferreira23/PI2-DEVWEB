@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Produtos — Mercurius</title>
+  </head>
+  <body class="app-body">
+    <aside class="sidebar">
+      <a class="logo light" href="/"><span>M</span>Mercurius</a
+      ><a class="new-action" href="/nova-movimentacao.html">＋ Nova movimentação</a>
+      <nav class="side-nav">
+        <a href="/dashboard.html"
+          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
+        ><a href="/contas.html"
+          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
+        ><a href="/cartoes.html"
+          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
+        ><a class="active" href="/produtos.html"
+          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
+        ><a href="/movimentacoes.html"
+          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
+        ><a href="/configuracoes.html"
+          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
+        >
+      </nav>
+      <div class="sync-box">
+        <svg><use href="/icons.svg#shield" /></svg>
+        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
+      </div>
+    </aside>
+    <main class="app">
+      <header class="app-header">
+        <div>
+          <h1>Produtos</h1>
+          <p>Controle seus produtos e evite desperdícios.</p>
+        </div>
+        <a class="profile" href="/configuracoes.html"
+          ><span>U</span>
+          <div><b>Usuário</b><small>usuario@exemplo.com</small></div></a
+        >
+      </header>
+      <div class="app-content">
+        <section class="notice">
+          <svg><use href="/icons.svg#calendar" /></svg>
+          <div>
+            <h3>2 produtos próximos do vencimento e 1 vencido</h3>
+            <p>Use primeiro os itens que precisam de atenção.</p>
+          </div>
+        </section>
+        <div class="toolbar">
+          <div class="search">
+            <svg><use href="/icons.svg#search" /></svg><input placeholder="Buscar produto" />
+          </div>
+          <a class="button primary" href="/novo-produto.html">＋ Adicionar produto</a>
+        </div>
+        <form class="filter-bar product-filter" action="/produtos.html" method="get">
+          <div class="filter-field">
+            <label for="status">Status do produto</label>
+            <select id="status" name="status">
+              <option value="">Todos</option>
+              <option>Aberto</option>
+              <option>Fechado</option>
+              <option>Vencido</option>
+              <option>Consumido</option>
+              <option>Descartado</option>
+            </select>
+          </div>
+          <div class="filter-actions">
+            <a class="button ghost" href="/produtos.html">Limpar</a>
+            <button class="button outline" type="submit">Aplicar filtro</button>
+          </div>
+        </form>
+        <div class="tabs">
+          <span class="active">Todos · 4</span><span>Fechados · 2</span><span>Abertos · 1</span
+          ><span>Consumidos</span><span>Vencidos · 1</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Status</th>
+                <th>Entrada</th>
+                <th>Vencimento</th>
+                <th>Compra de origem</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Leite integral</td>
+                <td><span class="tag blue">Aberto</span></td>
+                <td>18/06/2025</td>
+                <td class="negative">24/06/2025 · Em 4 dias</td>
+                <td>Supermercado Central</td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-produto.html" aria-label="Editar produto"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-produto.html" aria-label="Excluir produto"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Café em grãos</td>
+                <td><span class="tag">Fechado</span></td>
+                <td>15/06/2025</td>
+                <td>15/10/2025</td>
+                <td>Empório da Vila</td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-produto.html" aria-label="Editar produto"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-produto.html" aria-label="Excluir produto"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Iogurte natural</td>
+                <td><span class="tag">Fechado</span></td>
+                <td>19/06/2025</td>
+                <td class="negative">27/06/2025 · Em 7 dias</td>
+                <td>Supermercado Central</td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-produto.html" aria-label="Editar produto"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-produto.html" aria-label="Excluir produto"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Queijo minas</td>
+                <td><span class="tag red">Vencido</span></td>
+                <td>10/06/2025</td>
+                <td class="negative">17/06/2025 · Vencido</td>
+                <td>Mercado Central</td>
+                <td>
+                  <span class="actions"
+                    ><a href="/editar-produto.html" aria-label="Editar produto"
+                      ><svg><use href="/icons.svg#edit" /></svg></a
+                    ><a href="/excluir-produto.html" aria-label="Excluir produto"
+                      ><svg><use href="/icons.svg#trash" /></svg></a
+                  ></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

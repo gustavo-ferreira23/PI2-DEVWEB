@@ -1,0 +1,26 @@
+.stat-card.purple > svg {
+  background: #eee9f7;
+  color: #7454a2;
+}
+.tag.purple {
+  background: #f1edf7;
+  color: #73569a;
+}
+
+.movement-stats {
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  max-width: 650px;
+}
+
+@media (max-width: 800px) {
+  .movement-stats {
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .movement-stats {
+    grid-template-columns: 1fr;
+  }
+}

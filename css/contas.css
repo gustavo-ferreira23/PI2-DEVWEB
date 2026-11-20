@@ -1,0 +1,115 @@
+.summary-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 25px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #0a3c6e, #126b9f);
+  color: white;
+}
+.summary-banner > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.summary-banner svg {
+  width: 43px;
+  height: 43px;
+  padding: 10px;
+  border-radius: 9px;
+  background: #ffffff1a;
+}
+.summary-banner p {
+  font-size: 10px;
+  opacity: 0.7;
+}
+.summary-banner h2 {
+  font-size: 22px;
+  margin-top: 2px;
+}
+.summary-banner > small {
+  font-size: 10px;
+  opacity: 0.7;
+}
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.account-card {
+  padding: 20px;
+  border: 1px solid #dfe8ed;
+  border-radius: 11px;
+  background: white;
+}
+.account-card > svg {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 9px;
+  background: #1783c1;
+  color: white;
+}
+.account-card > p {
+  color: #84919b;
+  font-size: 9px;
+  margin-top: 18px;
+}
+.account-card > h3 {
+  color: #274357;
+  font-size: 15px;
+  margin-top: 2px;
+}
+.account-card > small {
+  color: #8b979f;
+  font-size: 9px;
+}
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #e9eef1;
+}
+.balance span {
+  color: #82909a;
+  font-size: 9px;
+}
+.balance strong {
+  color: #263f52;
+  font: 700 15px Manrope;
+}
+@media (max-width: 1100px) {
+  .account-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .account-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 540px) {
+  .summary-banner > small {
+    display: none;
+  }
+}
+
+.summary-banner {
+  border: 1px solid #dce5ea;
+  border-radius: 7px;
+  background: white;
+  color: #263f52;
+}
+
+.summary-banner svg {
+  background: #e6f2f8;
+  color: #177eb8;
+}
+
+.summary-banner p,
+.summary-banner > small {
+  color: #72818c;
+  opacity: 1;
+}

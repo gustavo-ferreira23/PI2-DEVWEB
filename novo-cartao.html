@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Adicionar cartão — Mercurius</title>
+  </head>
+  <body class="app-body">
+    <aside class="sidebar">
+      <a class="logo light" href="/"><span>M</span>Mercurius</a
+      ><a class="new-action" href="/nova-movimentacao.html">＋ Nova movimentação</a>
+      <nav class="side-nav">
+        <a href="/dashboard.html"
+          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
+        ><a href="/contas.html"
+          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
+        ><a class="active" href="/cartoes.html"
+          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
+        ><a href="/produtos.html"
+          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
+        ><a href="/movimentacoes.html"
+          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
+        ><a href="/configuracoes.html"
+          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
+        >
+      </nav>
+      <div class="sync-box">
+        <svg><use href="/icons.svg#shield" /></svg>
+        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
+      </div>
+    </aside>
+    <div class="app record-app">
+      <header class="record-header">
+        <a class="logo" href="/dashboard.html"><span>M</span>Mercurius</a
+        ><a href="/cartoes.html">Cancelar</a>
+      </header>
+      <main class="record-main">
+        <div class="record-title">
+          <a href="/cartoes.html">← Voltar para cartões</a>
+          <h1>Adicionar cartão</h1>
+          <p>Vincule o cartão a uma das suas contas.</p>
+        </div>
+        <form class="record-card" action="/cartoes.html">
+          <div class="form-grid">
+            <label class="full"
+              >Descrição do cartão<input required placeholder="Ex.: Cartão principal" /></label
+            ><label
+              >Conta vinculada<select>
+                <option>Conta principal</option>
+                <option>Reserva</option>
+              </select></label
+            ><label
+              >Bandeira<select>
+                <option>Visa</option>
+                <option>Mastercard</option>
+                <option>Elo</option>
+                <option>American Express</option>
+                <option>Hipercard</option>
+                <option>Outra</option>
+              </select></label
+            ><label>Limite<input type="number" required step=".01" /></label
+            ><label>Dia de fechamento<input type="number" required min="1" max="31" /></label
+            ><label>Dia de vencimento<input type="number" required min="1" max="31" /></label>
+          </div>
+          <div class="record-actions">
+            <a class="button outline" href="/cartoes.html">Cancelar</a
+            ><button class="button primary">Salvar cartão</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

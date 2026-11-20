@@ -1,0 +1,71 @@
+.record-main.wide {
+  width: min(920px, calc(100% - 32px));
+}
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.choice-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 190px;
+  padding: 22px;
+  border: 1px solid #dce6eb;
+  border-radius: 12px;
+  background: white;
+}
+.choice-card:hover {
+  border-color: #1783c1;
+  box-shadow: 0 10px 25px #0a3c6e12;
+}
+.choice-card svg {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 9px;
+  background: #e6f3fa;
+  color: #1783c1;
+}
+.choice-card h2 {
+  margin-top: 24px;
+  color: #26465b;
+  font-size: 16px;
+}
+.choice-card p {
+  margin-top: 7px;
+  color: #7b8b95;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.choice-card b {
+  margin-top: auto;
+  color: #1783c1;
+  font-size: 11px;
+}
+@media (max-width: 700px) {
+  .choice-grid {
+    grid-template-columns: 1fr;
+  }
+  .choice-card {
+    min-height: 150px;
+  }
+}
+
+.choice-grid {
+  gap: 12px;
+}
+
+.choice-card {
+  min-height: 168px;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.choice-card:hover {
+  box-shadow: none;
+}
+
+.choice-card h2 {
+  margin-top: 18px;
+}

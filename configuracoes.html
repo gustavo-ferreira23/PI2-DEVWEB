@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/configuracoes.css"/>
+    <title>
+      Configurações — Mercurius
+    </title>
+  </head>
+  <body class="app-body">
+    <aside class="sidebar">
+      <a class="logo light" href="./index.html">
+        <span>
+          M
+        </span>
+        Mercurius
+      </a >
+      <a class="new-action" href="./nova-movimentacao.html">
+        + Nova movimentação
+      </a>
+      <nav class="side-nav">
+        <a href="./dashboard.html" >
+          Visão geral
+        </a >
+        <a href="./contas.html" >
+          Contas
+        </a >
+        <a href="./cartoes.html" >
+          Cartões
+        </a >
+        <a href="./produtos.html" >
+          Produtos
+        </a >
+        <a href="./movimentacoes.html" >
+          Movimentações
+        </a >
+        <a class="active" href="./configuracoes.html" >
+          Configurações
+        </a >
+      </nav>
+      <a class="logout" href="./login.html">
+        ← Sair da conta
+      </a>
+    </aside>
+    <main class="app">
+      <header class="app-header">
+        <div>
+          <h1>
+            Configurações
+          </h1>
+          <p>
+            Gerencie seus dados e preferências.
+          </p>
+        </div>
+        <a class="profile" href="./configuracoes.html" >
+          <span>
+            U
+          </span>
+          <div>
+            <b>
+              Usuário
+            </b>
+            <small>
+              usuario@exemplo.com
+            </small>
+          </div>
+        </a >
+      </header>
+      <div class="app-content">
+        <div class="settings-layout">
+          <nav class="settings-nav">
+            <a class="active" href="#perfil" >
+              Perfil
+            </a >
+            <a href="#notificacoes" >
+              Notificações
+            </a >
+          </nav>
+          <div class="settings-stack">
+            <section class="settings-card" id="perfil">
+              <h2>
+                Informações pessoais
+              </h2>
+              <p class="intro">
+                Atualize seus dados de identificação e contato.
+              </p>
+              <div class="avatar">
+                <span>
+                  U
+                </span>
+                <div>
+                  <b>
+                    Foto de perfil
+                  </b>
+                  <p>
+                    JPG ou PNG. Máximo de 2 MB.
+                  </p>
+                </div>
+              </div>
+              <form action="./configuracoes.html">
+                <div class="form-grid">
+                  <label class="full">
+                    Nome de exibição
+                    <input value="Usuário"/>
+                  </label >
+                  <label>
+                    E-mail principal
+                    <input type="email" value="usuario@exemplo.com"/>
+                  </label >
+                  <label>
+                    Telefone
+                    <input value="(00) 00000-0000"/>
+                  </label>
+                </div>
+                <div class="form-actions">
+                  <button class="button primary" type="submit">
+                    Salvar alterações
+                  </button>
+                </div>
+              </form>
+            </section>
+            <section class="settings-card" id="notificacoes">
+              <h2>
+                Preferências de notificações
+              </h2>
+              <p class="intro">
+                Escolha quais avisos deseja receber.
+              </p>
+              <div class="toggle-row">
+                <div>
+                  <b>
+                    Produtos próximos do vencimento
+                  </b>
+                  <p>
+                    Aviso com 10 dias de antecedência.
+                  </p>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" name="notificar-vencimento" aria-label="Ativar notificações de produtos próximos do vencimento" checked/>
+                  <span class="toggle-slider" aria-hidden="true">
+                  </span>
+                </label>
+              </div>
+              <div class="toggle-row">
+                <div>
+                  <b>
+                    Produtos vencidos
+                  </b>
+                  <p>
+                    Produtos que foram vencidos.
+                  </p>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" name="notificar-resumo-compras" aria-label="Ativar resumo mensal de compras" checked/>
+                  <span class="toggle-slider" aria-hidden="true">
+                  </span>
+                </label>
+              </div>
+              <div class="toggle-row">
+                <div>
+                  <b>
+                    Avisos do sistema
+                  </b>
+                  <p>
+                    Avisos do sistema como alertas de manutenção, atualizações etc.
+                  </p>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" name="notificar-resumo-compras" aria-label="Ativar resumo mensal de compras"/>
+                  <span class="toggle-slider" aria-hidden="true">
+                  </span>
+                </label>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

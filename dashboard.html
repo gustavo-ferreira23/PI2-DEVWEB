@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/dashboard.css"/>
+    <title>
+      Visão geral — Mercurius
+    </title>
+  </head>
+  <body class="app-body">
+    <aside class="sidebar">
+      <a class="logo light" href="./index.html">
+        <span>
+          M
+        </span>
+        Mercurius
+      </a >
+      <a class="new-action" href="./nova-movimentacao.html">
+        + Nova movimentação
+      </a>
+      <nav class="side-nav">
+        <a class="active" href="./dashboard.html" >
+          Visão geral
+        </a >
+        <a href="./contas.html" >
+          Contas
+        </a >
+        <a href="./cartoes.html" >
+          Cartões
+        </a >
+        <a href="./produtos.html" >
+          Produtos
+        </a >
+        <a href="./movimentacoes.html" >
+          Movimentações
+        </a >
+        <a href="./configuracoes.html" >
+          Configurações
+        </a >
+      </nav>
+      <a class="logout" href="./login.html">
+        ← Sair da conta
+      </a>
+    </aside>
+    <main class="app">
+      <header class="app-header">
+        <div>
+          <h1>
+            Visão geral
+          </h1>
+          <p>
+            Produtos, vencimentos e gastos com alimentos.
+          </p>
+        </div>
+        <a class="profile" href="./configuracoes.html" >
+          <span>
+            U
+          </span>
+          <div>
+            <b>
+              Usuário
+            </b>
+            <small>
+              usuario@exemplo.com
+            </small>
+          </div>
+        </a >
+      </header>
+      <div class="app-content">
+        <div class="welcome compact-welcome">
+          <div>
+            <h2>
+              Resumo de hoje
+            </h2>
+            <p>
+              Veja o que precisa de atenção.
+            </p>
+          </div>
+          <a class="button primary" href="./novo-produto.html">
+            + Adicionar produto
+          </a>
+        </div>
+        <section class="stat-grid dashboard-stats">
+          <article class="stat-card">
+            <div>
+              <p>
+                Produtos cadastrados
+              </p>
+              <h3>
+                4
+              </h3>
+              <small>
+                2 abertos
+              </small>
+            </div>
+          </article>
+          <article class="stat-card orange">
+            <div>
+              <p>
+                Próximos do vencimento
+              </p>
+              <h3>
+                3
+              </h3>
+              <small>
+                2 próximos e 1 vencido
+              </small>
+            </div>
+          </article>
+          <article class="stat-card">
+            <div>
+              <p>
+                Gasto com alimentos
+              </p>
+              <h3>
+                R$ 629,73
+              </h3>
+              <small>
+                Neste mês
+              </small>
+            </div>
+          </article>
+        </section>
+        <section class="panel-grid dashboard-main">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <h3>
+                  Produtos cadastrados
+                </h3>
+                <p>
+                  Itens adicionados recentemente
+                </p>
+              </div>
+              <a href="./produtos.html">
+                Ver todos →
+              </a>
+            </div>
+            <div class="list-row">
+              <div class="list-copy">
+                <b>
+                  Leite integral
+                </b>
+                <small>
+                  Aberto · Mercado Central
+                </small>
+              </div>
+              <div class="list-value">
+                <small>
+                  Entrada 18/06
+                </small>
+              </div>
+            </div>
+            <div class="list-row">
+              <div class="list-copy">
+                <b>
+                  Café em grãos
+                </b>
+                <small>
+                  Fechado · Empório da Vila
+                </small>
+              </div>
+              <div class="list-value">
+                <small>
+                  Entrada 15/06
+                </small>
+              </div>
+            </div>
+            <div class="list-row">
+              <div class="list-copy">
+                <b>
+                  Queijo minas
+                </b>
+                <small>
+                  Vencido · Mercado Central
+                </small>
+              </div>
+              <div class="list-value">
+                <small>
+                  Entrada 10/06
+                </small>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <h3>
+                  Vencimentos
+                </h3>
+                <p>
+                  Itens que precisam de atenção
+                </p>
+              </div>
+              <a href="./produtos.html">
+                Ver produtos →
+              </a>
+            </div>
+            <div class="list-row">
+              <div class="list-copy">
+                <b>
+                  Leite integral
+                </b>
+                <small>
+                  Vence em 4 dias
+                </small>
+              </div>
+              <div class="list-value">
+                <b class="negative">
+                  24/06
+                </b>
+              </div>
+            </div>
+            <div class="list-row">
+              <div class="list-copy">
+                <b>
+                  Iogurte natural
+                </b>
+                <small>
+                  Vence em 7 dias
+                </small>
+              </div>
+              <div class="list-value">
+                <b class="negative">
+                  27/06
+                </b>
+              </div>
+            </div>
+            <div class="list-row">
+              <div class="list-copy">
+                <b>
+                  Queijo minas
+                </b>
+                <small>
+                  Vencido há 3 dias
+                </small>
+              </div>
+              <div class="list-value">
+                <b class="negative">
+                  17/06
+                </b>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

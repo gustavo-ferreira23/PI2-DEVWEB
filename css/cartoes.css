@@ -1,0 +1,88 @@
+.stat-card.green > svg {
+  background: #e4f5ed;
+  color: #16835a;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.credit-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid #dfe8ed;
+  border-radius: 11px;
+  background: white;
+}
+.card-visual {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #0a3c6e, #061f38);
+  box-shadow: 0 8px 18px #0a3c6e22;
+  color: white;
+}
+.card-visual.alt {
+  background: linear-gradient(135deg, #1783c1, #0a3c6e);
+}
+.card-visual strong {
+  margin-top: auto;
+  font-size: 12px;
+}
+.card-visual span {
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  margin: 6px 0;
+}
+.card-visual small {
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+.card-info h3 {
+  font-size: 13px;
+}
+.card-info > p {
+  color: #88959e;
+  font-size: 8px;
+}
+.progress {
+  height: 5px;
+  margin: 14px 0 5px;
+  border-radius: 5px;
+  background: #e8eef1;
+}
+.progress i {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: #1783c1;
+}
+.card-info small {
+  color: #7d8b94;
+  font-size: 8px;
+}
+.card-dates {
+  display: flex;
+  gap: 24px;
+  margin-top: 14px;
+}
+.card-dates b {
+  font-size: 9px;
+}
+@media (max-width: 1100px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 540px) {
+  .credit-card {
+    grid-template-columns: 1fr;
+  }
+  .card-visual {
+    height: 160px;
+  }
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cartões — Mercurius</title>
+  </head>
+  <body class="app-body">
+    <aside class="sidebar">
+      <a class="logo light" href="/"><span>M</span>Mercurius</a
+      ><a class="new-action" href="/nova-movimentacao.html">＋ Nova movimentação</a>
+      <nav class="side-nav">
+        <a href="/dashboard.html"
+          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
+        ><a href="/contas.html"
+          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
+        ><a class="active" href="/cartoes.html"
+          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
+        ><a href="/produtos.html"
+          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
+        ><a href="/movimentacoes.html"
+          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
+        ><a href="/configuracoes.html"
+          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
+        >
+      </nav>
+      <div class="sync-box">
+        <svg><use href="/icons.svg#shield" /></svg>
+        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
+      </div>
+    </aside>
+    <main class="app">
+      <header class="app-header">
+        <div>
+          <h1>Cartões</h1>
+          <p>Acompanhe limites, faturas e vencimentos.</p>
+        </div>
+        <a class="profile" href="/configuracoes.html"
+          ><span>U</span>
+          <div><b>Usuário</b><small>usuario@exemplo.com</small></div></a
+        >
+      </header>
+      <div class="app-content">
+        <section class="stat-grid">
+          <article class="stat-card">
+            <svg><use href="/icons.svg#card" /></svg>
+            <div>
+              <p>Limite total</p>
+              <h3>R$ 10.500,00</h3>
+              <small>2 cartões ativos</small>
+            </div>
+          </article>
+          <article class="stat-card green">
+            <svg><use href="/icons.svg#trend" /></svg>
+            <div>
+              <p>Limite disponível</p>
+              <h3>R$ 7.862,09</h3>
+              <small>75% disponível</small>
+            </div>
+          </article>
+          <article class="stat-card orange">
+            <svg><use href="/icons.svg#calendar" /></svg>
+            <div>
+              <p>Faturas abertas</p>
+              <h3>R$ 2.637,91</h3>
+              <small>Próximo vencimento: dia 25</small>
+            </div>
+          </article>
+        </section>
+        <div class="toolbar">
+          <div class="search">
+            <svg><use href="/icons.svg#search" /></svg><input placeholder="Buscar cartão" />
+          </div>
+          <a class="button primary" href="/novo-cartao.html">＋ Adicionar cartão</a>
+        </div>
+        <section class="card-grid">
+          <article class="credit-card">
+            <div class="card-visual">
+              <small>NÉBULA</small><strong>Cartão Azul</strong><span>•••• 4821</span
+              ><small>USUÁRIO</small>
+            </div>
+            <div class="card-info">
+              <h3>Cartão Azul</h3>
+              <p>Vinculado à Conta principal</p>
+              <div class="progress"><i style="width: 28%"></i></div>
+              <small>R$ 1.842,69 de R$ 6.500,00</small>
+              <div class="card-dates">
+                <small>FECHAMENTO<br /><b>Dia 18</b></small
+                ><small>VENCIMENTO<br /><b>Dia 25</b></small>
+              </div>
+              <div class="card-actions">
+                <a href="/editar-cartao.html"
+                  ><svg><use href="/icons.svg#edit" /></svg>Editar</a
+                ><a href="/excluir-cartao.html"
+                  ><svg><use href="/icons.svg#trash" /></svg>Excluir</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="credit-card">
+            <div class="card-visual alt">
+              <small>ÓRBITA</small><strong>Cartão Essencial</strong><span>•••• 9064</span
+              ><small>USUÁRIO</small>
+            </div>
+            <div class="card-info">
+              <h3>Cartão Essencial</h3>
+              <p>Vinculado à Reserva</p>
+              <div class="progress"><i style="width: 20%"></i></div>
+              <small>R$ 795,22 de R$ 4.000,00</small>
+              <div class="card-dates">
+                <small>FECHAMENTO<br /><b>Dia 3</b></small
+                ><small>VENCIMENTO<br /><b>Dia 10</b></small>
+              </div>
+              <div class="card-actions">
+                <a href="/editar-cartao.html"
+                  ><svg><use href="/icons.svg#edit" /></svg>Editar</a
+                ><a href="/excluir-cartao.html"
+                  ><svg><use href="/icons.svg#trash" /></svg>Excluir</a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
