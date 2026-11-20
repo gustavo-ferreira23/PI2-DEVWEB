@@ -1,77 +1,64 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/login.css"/>
-    <title>
-      Entrar — Mercurius
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Entrar — Mercurius</title>
   </head>
-  <body class="auth-page">
-    <aside class="auth-aside">
-      <a class="back" href="./index.html">
-        ← Voltar ao início
-      </a >
-      <a class="logo light" href="./index.html">
-        <span>
-          M
-        </span>
+  <body class="pagina-autenticacao">
+    <aside class="lateral-autenticacao">
+      <a class="voltar" href="./index.html"> ← Voltar ao início </a>
+      <a class="logo claro" href="./index.html">
+        <span> M </span>
         Mercurius
       </a>
-      <div class="quote">
+      <div class="citacao">
         <blockquote>
           Seus produtos e compras organizados de forma simples.
         </blockquote>
-        <p>
-          Mercurius
-        </p>
+        <p>Mercurius</p>
       </div>
     </aside>
-    <main class="auth-main">
-      <section class="auth-card">
-        <a class="logo auth-logo" href="">
-          <span>
-            M
-          </span>
+    <main class="principal-autenticacao">
+      <section class="cartao-autenticacao">
+        <a class="logo logo-autenticacao" href="./index.html">
+          <span> M </span>
           Mercurius
         </a>
-        <h1>
-          Que bom ter você de volta
-        </h1>
-        <p>
-          Entre para continuar organizando seus alimentos.
-        </p>
+        <h1>Que bom ter você de volta</h1>
+        <p>Entre para continuar organizando seus alimentos.</p>
         <form action="./dashboard.html">
           <label>
             E-mail
-            <input type="email" required placeholder="voce@exemplo.com"/>
+            <input type="email" required placeholder="voce@exemplo.com" />
           </label>
-          <label >
+          <label>
             Senha
-            <input type="password" required minlength="8" placeholder="Mínimo de 8 caracteres"/>
+            <input
+              type="password"
+              required
+              minlength="8"
+              placeholder="Mínimo de 8 caracteres"
+            />
           </label>
-          <div class="form-line">
-            <label class="check">
-              <input type="checkbox"/>
+          <div class="linha-formulario">
+            <label class="verificacao">
+              <input type="checkbox" />
               Lembrar de mim
-            </label >
-            <a href="./recuperar-senha.html">
-              Esqueci minha senha
-            </a>
+            </label>
+            <a href="./recuperar-senha.html"> Esqueci minha senha </a>
           </div>
-          <button class="button primary full" type="submit">
+          <button class="botao primario completo" type="submit">
             Entrar →
           </button>
         </form>
-        <p class="switch">
+        <p class="troca-autenticacao">
           Ainda não tem uma conta?
-          <a href="./cadastro.html">
-            Cadastre-se
-          </a>
+          <a href="./cadastro.html"> Cadastre-se </a>
         </p>
-        <div class="privacy">
+        <div class="privacidade">
           Seus dados são tratados de acordo com a LGPD.
         </div>
       </section>

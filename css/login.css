@@ -1,9 +1,9 @@
-.form-line {
+.linha-formulario {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.privacy {
+.privacidade {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,4 @@
   border-top: 1px solid #e7edf1;
   color: #849099;
   font-size: 11px;
-}
-.privacy svg {
-  width: 17px;
 }

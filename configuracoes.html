@@ -1,176 +1,134 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/configuracoes.css"/>
-    <title>
-      Configurações — Mercurius
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/configuracoes.css" />
+    <title>Configurações — Mercurius</title>
   </head>
-  <body class="app-body">
-    <aside class="sidebar">
-      <a class="logo light" href="./index.html">
-        <span>
-          M
-        </span>
+  <body class="corpo-aplicativo">
+    <aside class="barra-lateral">
+      <a class="logo claro" href="./index.html">
+        <span> M </span>
         Mercurius
-      </a >
-      <a class="new-action" href="./nova-movimentacao.html">
+      </a>
+      <a class="nova-acao" href="./nova-movimentacao.html">
         + Nova movimentação
       </a>
-      <nav class="side-nav">
-        <a href="./dashboard.html" >
-          Visão geral
-        </a >
-        <a href="./contas.html" >
-          Contas
-        </a >
-        <a href="./cartoes.html" >
-          Cartões
-        </a >
-        <a href="./produtos.html" >
-          Produtos
-        </a >
-        <a href="./movimentacoes.html" >
-          Movimentações
-        </a >
-        <a class="active" href="./configuracoes.html" >
-          Configurações
-        </a >
+      <nav class="navegacao-lateral">
+        <a href="./dashboard.html"> Visão geral </a>
+        <a href="./contas.html"> Contas </a>
+        <a href="./cartoes.html"> Cartões </a>
+        <a href="./produtos.html"> Produtos </a>
+        <a href="./movimentacoes.html"> Movimentações </a>
+        <a class="ativo" href="./configuracoes.html"> Configurações </a>
       </nav>
-      <a class="logout" href="./login.html">
-        ← Sair da conta
-      </a>
+      <a class="sair" href="./login.html"> ← Sair da conta </a>
     </aside>
-    <main class="app">
-      <header class="app-header">
+    <main class="aplicativo">
+      <header class="cabecalho-aplicativo">
         <div>
-          <h1>
-            Configurações
-          </h1>
-          <p>
-            Gerencie seus dados e preferências.
-          </p>
+          <h1>Configurações</h1>
+          <p>Gerencie seus dados e preferências.</p>
         </div>
-        <a class="profile" href="./configuracoes.html" >
-          <span>
-            U
-          </span>
+        <a class="perfil" href="./configuracoes.html">
+          <span> U </span>
           <div>
-            <b>
-              Usuário
-            </b>
-            <small>
-              usuario@exemplo.com
-            </small>
+            <b> Usuário </b>
+            <small> usuario@exemplo.com </small>
           </div>
-        </a >
+        </a>
       </header>
-      <div class="app-content">
-        <div class="settings-layout">
-          <nav class="settings-nav">
-            <a class="active" href="#perfil" >
-              Perfil
-            </a >
-            <a href="#notificacoes" >
-              Notificações
-            </a >
+      <div class="conteudo-aplicativo">
+        <div class="estrutura-configuracoes">
+          <nav class="navegacao-configuracoes">
+            <a class="ativo" href="#perfil"> Perfil </a>
+            <a href="#notificacoes"> Notificações </a>
           </nav>
-          <div class="settings-stack">
-            <section class="settings-card" id="perfil">
-              <h2>
-                Informações pessoais
-              </h2>
-              <p class="intro">
+          <div class="pilha-configuracoes">
+            <section class="cartao-configuracoes" id="perfil">
+              <h2>Informações pessoais</h2>
+              <p class="introducao">
                 Atualize seus dados de identificação e contato.
               </p>
-              <div class="avatar">
-                <span>
-                  U
-                </span>
+              <div class="foto-perfil">
+                <span> U </span>
                 <div>
-                  <b>
-                    Foto de perfil
-                  </b>
-                  <p>
-                    JPG ou PNG. Máximo de 2 MB.
-                  </p>
+                  <b> Foto de perfil </b>
+                  <p>JPG ou PNG. Máximo de 2 MB.</p>
                 </div>
               </div>
               <form action="./configuracoes.html">
-                <div class="form-grid">
-                  <label class="full">
+                <div class="grade-formulario">
+                  <label class="completo">
                     Nome de exibição
-                    <input value="Usuário"/>
-                  </label >
+                    <input value="Usuário" />
+                  </label>
                   <label>
                     E-mail principal
-                    <input type="email" value="usuario@exemplo.com"/>
-                  </label >
+                    <input type="email" value="usuario@exemplo.com" />
+                  </label>
                   <label>
                     Telefone
-                    <input value="(00) 00000-0000"/>
+                    <input value="(00) 00000-0000" />
                   </label>
                 </div>
-                <div class="form-actions">
-                  <button class="button primary" type="submit">
+                <div class="acoes-formulario">
+                  <button class="botao primario" type="submit">
                     Salvar alterações
                   </button>
                 </div>
               </form>
             </section>
-            <section class="settings-card" id="notificacoes">
-              <h2>
-                Preferências de notificações
-              </h2>
-              <p class="intro">
-                Escolha quais avisos deseja receber.
-              </p>
-              <div class="toggle-row">
+            <section class="cartao-configuracoes" id="notificacoes">
+              <h2>Preferências de notificações</h2>
+              <p class="introducao">Escolha quais avisos deseja receber.</p>
+              <div class="linha-alternador">
                 <div>
-                  <b>
-                    Produtos próximos do vencimento
-                  </b>
-                  <p>
-                    Aviso com 10 dias de antecedência.
-                  </p>
+                  <b> Produtos próximos do vencimento </b>
+                  <p>Aviso com 10 dias de antecedência.</p>
                 </div>
-                <label class="toggle-switch">
-                  <input type="checkbox" name="notificar-vencimento" aria-label="Ativar notificações de produtos próximos do vencimento" checked/>
-                  <span class="toggle-slider" aria-hidden="true">
-                  </span>
+                <label class="alternador">
+                  <input
+                    type="checkbox"
+                    name="notificar-vencimento"
+                    aria-label="Ativar notificações de produtos próximos do vencimento"
+                    checked
+                  />
+                  <span class="trilho-alternador" aria-hidden="true"> </span>
                 </label>
               </div>
-              <div class="toggle-row">
+              <div class="linha-alternador">
                 <div>
-                  <b>
-                    Produtos vencidos
-                  </b>
-                  <p>
-                    Produtos que foram vencidos.
-                  </p>
+                  <b> Produtos vencidos </b>
+                  <p>Produtos que foram vencidos.</p>
                 </div>
-                <label class="toggle-switch">
-                  <input type="checkbox" name="notificar-resumo-compras" aria-label="Ativar resumo mensal de compras" checked/>
-                  <span class="toggle-slider" aria-hidden="true">
-                  </span>
+                <label class="alternador">
+                  <input
+                    type="checkbox"
+                    name="notificar-produtos-vencidos"
+                    aria-label="Ativar notificações de produtos vencidos"
+                    checked
+                  />
+                  <span class="trilho-alternador" aria-hidden="true"> </span>
                 </label>
               </div>
-              <div class="toggle-row">
+              <div class="linha-alternador">
                 <div>
-                  <b>
-                    Avisos do sistema
-                  </b>
+                  <b> Avisos do sistema </b>
                   <p>
-                    Avisos do sistema como alertas de manutenção, atualizações etc.
+                    Avisos do sistema como alertas de manutenção, atualizações
+                    etc.
                   </p>
                 </div>
-                <label class="toggle-switch">
-                  <input type="checkbox" name="notificar-resumo-compras" aria-label="Ativar resumo mensal de compras"/>
-                  <span class="toggle-slider" aria-hidden="true">
-                  </span>
+                <label class="alternador">
+                  <input
+                    type="checkbox"
+                    name="notificar-avisos-sistema"
+                    aria-label="Ativar avisos do sistema"
+                  />
+                  <span class="trilho-alternador" aria-hidden="true"> </span>
                 </label>
               </div>
             </section>

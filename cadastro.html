@@ -1,73 +1,71 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <title>
-      Criar conta — Mercurius
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Criar conta — Mercurius</title>
   </head>
-  <body class="auth-page">
-    <aside class="auth-aside">
-      <a class="back" href="./index.html">
-        ← Voltar ao início
-      </a >
-      <a class="logo light" href="./index.html">
-        <span>
-          M
-        </span>
+  <body class="pagina-autenticacao">
+    <aside class="lateral-autenticacao">
+      <a class="voltar" href="./index.html"> ← Voltar ao início </a>
+      <a class="logo claro" href="./index.html">
+        <span> M </span>
         Mercurius
       </a>
-      <div class="quote">
+      <div class="citacao">
         <blockquote>
           Organize seus alimentos, vencimentos e compras em um só lugar.
         </blockquote>
-        <p>
-          Seus dados tratados com transparência.
-        </p>
+        <p>Seus dados tratados com transparência.</p>
       </div>
     </aside>
-    <main class="auth-main">
-      <section class="auth-card">
-        <a class="logo auth-logo" href="">
-          <span>
-            M
-          </span>
+    <main class="principal-autenticacao">
+      <section class="cartao-autenticacao">
+        <a class="logo logo-autenticacao" href="./index.html">
+          <span> M </span>
           Mercurius
         </a>
-        <h1>
-          Crie sua conta
-        </h1>
-        <p>
-          Preencha seus dados para começar.
-        </p>
+        <h1>Crie sua conta</h1>
+        <p>Preencha seus dados para começar.</p>
         <form action="./dashboard.html">
           <label>
             Nome de exibição
-            <input required maxlength="150" placeholder="Como deseja ser identificado?"/>
+            <input
+              required
+              maxlength="150"
+              placeholder="Como deseja ser identificado?"
+            />
           </label>
           <label>
             E-mail principal
-            <input type="email" required maxlength="320" placeholder="voce@exemplo.com"/>
+            <input
+              type="email"
+              required
+              maxlength="320"
+              placeholder="voce@exemplo.com"
+            />
           </label>
           <label>
             Senha
-            <input type="password" required minlength="8" placeholder="Mínimo de 8 caracteres"/>
+            <input
+              type="password"
+              required
+              minlength="8"
+              placeholder="Mínimo de 8 caracteres"
+            />
           </label>
-          <label class="check">
-            <input type="checkbox" required/>
+          <label class="verificacao">
+            <input type="checkbox" required />
             Li e aceito os Termos de uso e a Política de privacidade.
           </label>
-          <button class="button primary full" type="submit">
+          <button class="botao primario completo" type="submit">
             Criar minha conta →
           </button>
         </form>
-        <p class="switch">
+        <p class="troca-autenticacao">
           Já possui uma conta?
-          <a href="./login.html">
-            Entrar
-          </a>
+          <a href="./login.html"> Entrar </a>
         </p>
       </section>
     </main>

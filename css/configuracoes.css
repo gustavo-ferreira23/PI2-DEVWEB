@@ -1,24 +1,28 @@
-.settings-layout {
+.estrutura-configuracoes {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 18px;
   align-items: start;
 }
-.settings-stack {
+
+.pilha-configuracoes {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-.settings-nav,
-.settings-card {
+
+.navegacao-configuracoes,
+.cartao-configuracoes {
   border: 1px solid #dfe8ed;
   border-radius: 11px;
   background: white;
 }
-.settings-nav {
+
+.navegacao-configuracoes {
   padding: 8px;
 }
-.settings-nav a {
+
+.navegacao-configuracoes a {
   height: 43px;
   display: flex;
   align-items: center;
@@ -28,34 +32,40 @@
   color: #667680;
   font-size: 11px;
 }
-.settings-nav a.active {
+
+.navegacao-configuracoes a.ativo {
   background: #e8f4fa;
   color: #147aad;
   font-weight: 700;
 }
-.settings-card {
+
+.cartao-configuracoes {
   max-width: 760px;
   padding: 25px;
   scroll-margin-top: 20px;
 }
-.settings-card h2 {
+
+.cartao-configuracoes h2 {
   color: #284559;
   font-size: 17px;
 }
-.settings-card > .intro {
+
+.cartao-configuracoes>.introducao {
   padding-bottom: 18px;
   border-bottom: 1px solid #e5ecef;
   color: #84919a;
   font-size: 10px;
   margin: 3px 0 21px;
 }
-.avatar {
+
+.foto-perfil {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 24px;
 }
-.avatar > span {
+
+.foto-perfil>span {
   width: 62px;
   height: 62px;
   display: grid;
@@ -65,40 +75,48 @@
   color: #1376ab;
   font-weight: 800;
 }
-.avatar b {
+
+.foto-perfil b {
   font-size: 11px;
 }
-.avatar p {
+
+.foto-perfil p {
   color: #87949d;
   font-size: 9px;
 }
-.form-actions {
+
+.acoes-formulario {
   display: flex;
   justify-content: flex-end;
   margin-top: 25px;
   padding-top: 18px;
   border-top: 1px solid #e5ecef;
 }
-.toggle-row {
+
+.linha-alternador {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
   border-bottom: 1px solid #e7edf0;
 }
-.toggle-row:last-child {
+
+.linha-alternador:last-child {
   border-bottom: 0;
 }
-.toggle-row b {
+
+.linha-alternador b {
   color: #394e5d;
   font-size: 11px;
 }
-.toggle-row p {
+
+.linha-alternador p {
   margin-top: 3px;
   color: #83919a;
   font-size: 9px;
 }
-.toggle-switch {
+
+.alternador {
   position: relative;
   display: inline-block;
   width: 42px;
@@ -106,13 +124,13 @@
   flex: 0 0 auto;
 }
 
-.toggle-switch input {
+.alternador input {
   width: 0;
   height: 0;
   opacity: 0;
 }
 
-.toggle-slider {
+.trilho-alternador {
   position: absolute;
   inset: 0;
   cursor: pointer;
@@ -121,7 +139,7 @@
   transition: background-color 0.2s ease;
 }
 
-.toggle-slider::before {
+.trilho-alternador::before {
   position: absolute;
   bottom: 3px;
   left: 3px;
@@ -134,35 +152,38 @@
   transition: transform 0.2s ease;
 }
 
-.toggle-switch input:checked + .toggle-slider {
+.alternador input:checked+.trilho-alternador {
   background: #1783c1;
 }
 
-.toggle-switch input:checked + .toggle-slider::before {
+.alternador input:checked+.trilho-alternador::before {
   transform: translateX(18px);
 }
 
-.toggle-switch input:focus-visible + .toggle-slider {
+.alternador input:focus-visible+.trilho-alternador {
   outline: 3px solid #1783c133;
   outline-offset: 2px;
 }
 
-.toggle-switch:hover .toggle-slider {
+.alternador:hover .trilho-alternador {
   background: #aebdc5;
 }
 
-.toggle-switch:hover input:checked + .toggle-slider {
+.alternador:hover input:checked+.trilho-alternador {
   background: #0f73aa;
 }
+
 @media (max-width: 800px) {
-  .settings-layout {
+  .estrutura-configuracoes {
     grid-template-columns: 1fr;
   }
-  .settings-nav {
+
+  .navegacao-configuracoes {
     display: flex;
     overflow: auto;
   }
-  .settings-nav a {
+
+  .navegacao-configuracoes a {
     white-space: nowrap;
   }
 }

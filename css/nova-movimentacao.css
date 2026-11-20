@@ -1,12 +1,12 @@
-.record-main.wide {
+.principal-registro.largo {
   width: min(920px, calc(100% - 32px));
 }
-.choice-grid {
+.grade-escolhas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
-.choice-card {
+.cartao-escolha {
   display: flex;
   flex-direction: column;
   min-height: 190px;
@@ -15,57 +15,49 @@
   border-radius: 12px;
   background: white;
 }
-.choice-card:hover {
+.cartao-escolha:hover {
   border-color: #1783c1;
   box-shadow: 0 10px 25px #0a3c6e12;
 }
-.choice-card svg {
-  width: 42px;
-  height: 42px;
-  padding: 10px;
-  border-radius: 9px;
-  background: #e6f3fa;
-  color: #1783c1;
-}
-.choice-card h2 {
+.cartao-escolha h2 {
   margin-top: 24px;
   color: #26465b;
   font-size: 16px;
 }
-.choice-card p {
+.cartao-escolha p {
   margin-top: 7px;
   color: #7b8b95;
   font-size: 11px;
   line-height: 1.5;
 }
-.choice-card b {
+.cartao-escolha b {
   margin-top: auto;
   color: #1783c1;
   font-size: 11px;
 }
 @media (max-width: 700px) {
-  .choice-grid {
+  .grade-escolhas {
     grid-template-columns: 1fr;
   }
-  .choice-card {
+  .cartao-escolha {
     min-height: 150px;
   }
 }
 
-.choice-grid {
+.grade-escolhas {
   gap: 12px;
 }
 
-.choice-card {
+.cartao-escolha {
   min-height: 168px;
   padding: 20px;
   border-radius: 7px;
 }
 
-.choice-card:hover {
+.cartao-escolha:hover {
   box-shadow: none;
 }
 
-.choice-card h2 {
+.cartao-escolha h2 {
   margin-top: 18px;
 }

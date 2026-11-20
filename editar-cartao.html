@@ -6,65 +6,76 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Editar cartão — Mercurius</title>
   </head>
-  <body class="app-body">
-    <aside class="sidebar">
-      <a class="logo light" href="/"><span>M</span>Mercurius</a
-      ><a class="new-action" href="/nova-movimentacao.html">＋ Nova movimentação</a>
-      <nav class="side-nav">
-        <a href="/dashboard.html"
-          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
-        ><a href="/contas.html"
-          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
-        ><a class="active" href="/cartoes.html"
-          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
-        ><a href="/produtos.html"
-          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
-        ><a href="/movimentacoes.html"
-          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
-        ><a href="/configuracoes.html"
-          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
-        >
+  <body class="corpo-aplicativo">
+    <aside class="barra-lateral">
+      <a class="logo claro" href="./index.html">
+        <span> M </span>
+        Mercurius
+      </a>
+      <a class="nova-acao" href="./nova-movimentacao.html">
+        + Nova movimentação
+      </a>
+      <nav class="navegacao-lateral">
+        <a href="./dashboard.html"> Visão geral </a>
+        <a href="./contas.html"> Contas </a>
+        <a class="ativo" href="./cartoes.html"> Cartões </a>
+        <a href="./produtos.html"> Produtos </a>
+        <a href="./movimentacoes.html"> Movimentações </a>
+        <a href="./configuracoes.html"> Configurações </a>
       </nav>
-      <div class="sync-box">
-        <svg><use href="/icons.svg#shield" /></svg>
-        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
-      </div>
+      <a class="sair" href="./login.html"> ← Sair da conta </a>
     </aside>
-    <div class="app record-app">
-      <header class="record-header">
-        <a class="logo" href="/dashboard.html"><span>M</span>Mercurius</a
-        ><a href="/cartoes.html">Cancelar</a>
+    <div class="aplicativo aplicativo-registro">
+      <header class="cabecalho-registro">
+        <a class="logo" href="./dashboard.html">
+          <span> M </span>
+          Mercurius
+        </a>
+        <a href="./cartoes.html"> Cancelar </a>
       </header>
-      <main class="record-main">
-        <div class="record-title">
-          <a href="/cartoes.html">← Voltar para cartões</a>
+      <main class="principal-registro">
+        <div class="titulo-registro">
+          <a href="./cartoes.html"> ← Voltar para cartões </a>
           <h1>Editar cartão</h1>
           <p>Atualize limite, conta e datas do cartão.</p>
         </div>
-        <form class="record-card" action="/cartoes.html">
-          <div class="form-grid">
-            <label class="full">Descrição do cartão<input required value="Cartão Azul" /></label
-            ><label
-              >Conta vinculada<select>
+        <form class="cartao-registro" action="./cartoes.html">
+          <div class="grade-formulario">
+            <label class="completo">
+              Descrição do cartão
+              <input required value="Cartão Azul" />
+            </label>
+            <label>
+              Conta vinculada
+              <select>
                 <option>Conta principal</option>
                 <option>Reserva</option>
-              </select></label
-            ><label
-              >Bandeira<select>
+              </select>
+            </label>
+            <label>
+              Bandeira
+              <select>
                 <option>Mastercard</option>
                 <option>Visa</option>
                 <option>Outra</option>
-              </select></label
-            ><label>Limite<input type="number" required step=".01" value="6500" /></label
-            ><label
-              >Dia de fechamento<input type="number" required min="1" max="31" value="18" /></label
-            ><label
-              >Dia de vencimento<input type="number" required min="1" max="31" value="25"
-            /></label>
+              </select>
+            </label>
+            <label>
+              Limite
+              <input type="number" required step=".01" value="6500" />
+            </label>
+            <label>
+              Dia de fechamento
+              <input type="number" required min="1" max="31" value="18" />
+            </label>
+            <label>
+              Dia de vencimento
+              <input type="number" required min="1" max="31" value="25" />
+            </label>
           </div>
-          <div class="record-actions">
-            <a class="button outline" href="/cartoes.html">Cancelar</a
-            ><button class="button primary">Salvar alterações</button>
+          <div class="acoes-registro">
+            <a class="botao contorno" href="./cartoes.html"> Cancelar </a>
+            <button class="botao primario">Salvar alterações</button>
           </div>
         </form>
       </main>

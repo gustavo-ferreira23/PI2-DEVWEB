@@ -1,210 +1,101 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/contas.css"/>
-    <title>
-      Contas — Mercurius
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contas.css" />
+    <title>Contas — Mercurius</title>
   </head>
-  <body class="app-body">
-    <aside class="sidebar">
-      <a class="logo light" href="./index.html">
-        <span>
-          M
-        </span>
+  <body class="corpo-aplicativo">
+    <aside class="barra-lateral">
+      <a class="logo claro" href="./index.html">
+        <span> M </span>
         Mercurius
-      </a >
-      <a class="new-action" href="./nova-movimentacao.html">
+      </a>
+      <a class="nova-acao" href="./nova-movimentacao.html">
         + Nova movimentação
       </a>
-      <nav class="side-nav">
-        <a href="./dashboard.html" >
-          Visão geral
-        </a >
-        <a class="active" href="./contas.html" >
-          Contas
-        </a >
-        <a href="./cartoes.html" >
-          Cartões
-        </a >
-        <a href="./produtos.html" >
-          Produtos
-        </a >
-        <a href="./movimentacoes.html" >
-          Movimentações
-        </a >
-        <a href="./configuracoes.html" >
-          Configurações
-        </a >
+      <nav class="navegacao-lateral">
+        <a href="./dashboard.html"> Visão geral </a>
+        <a class="ativo" href="./contas.html"> Contas </a>
+        <a href="./cartoes.html"> Cartões </a>
+        <a href="./produtos.html"> Produtos </a>
+        <a href="./movimentacoes.html"> Movimentações </a>
+        <a href="./configuracoes.html"> Configurações </a>
       </nav>
-      <a class="logout" href="/">
-        ← Sair da conta
-      </a>
+      <a class="sair" href="./login.html"> ← Sair da conta </a>
     </aside>
-    <main class="app">
-      <header class="app-header">
+    <main class="aplicativo">
+      <header class="cabecalho-aplicativo">
         <div>
-          <h1>
-            Contas bancárias
-          </h1>
-          <p>
-            Visualize suas contas e saldos.
-          </p>
+          <h1>Contas bancárias</h1>
+          <p>Visualize suas contas e saldos.</p>
         </div>
-        <a class="profile" href="/configuracoes.html" >
-          <span>
-            U
-          </span>
+        <a class="perfil" href="./configuracoes.html">
+          <span> U </span>
           <div>
-            <b>
-              Usuário
-            </b>
-            <small>
-              usuario@exemplo.com
-            </small>
+            <b> Usuário </b>
+            <small> usuario@exemplo.com </small>
           </div>
-        </a >
+        </a>
       </header>
-      <div class="app-content">
-        <section class="summary-banner">
+      <div class="conteudo-aplicativo">
+        <section class="faixa-resumo">
           <div>
-            <svg>
-              <use href="/icons.svg#wallet"/>
-            </svg>
             <div>
-              <p>
-                Saldo total em contas
-              </p>
-              <h2>
-                R$ 21.310,54
-              </h2>
+              <p>Saldo total em contas</p>
+              <h2>R$ 21.310,54</h2>
             </div>
           </div>
-          <small>
-            3 contas cadastradas
-          </small>
+          <small> 3 contas cadastradas </small>
         </section>
-        <div class="toolbar">
-          <div class="search">
-            <svg>
-              <use href="/icons.svg#search"/>
-            </svg>
-            <input placeholder="Buscar conta"/>
+        <div class="barra-ferramentas">
+          <div class="busca">
+            <input placeholder="Buscar conta" />
           </div>
-          <a class="button primary" href="/nova-conta.html">
-            ＋ Adicionar conta
+          <a class="botao primario" href="./nova-conta.html">
+            + Adicionar conta
           </a>
         </div>
-        <section class="account-grid">
-          <article class="account-card">
-            <svg>
-              <use href="/icons.svg#bank"/>
-            </svg>
-            <p>
-              BANCO AURORA
-            </p>
-            <h3>
-              Conta principal
-            </h3>
-            <small>
-              Conta corrente
-            </small>
-            <div class="balance">
-              <span>
-                Saldo atual
-              </span>
-              <strong>
-                R$ 8.240,54
-              </strong>
+        <section class="grade-contas">
+          <article class="cartao-conta">
+            <p>BANCO AURORA</p>
+            <h3>Conta principal</h3>
+            <small> Conta corrente </small>
+            <div class="saldo">
+              <span> Saldo atual </span>
+              <strong> R$ 8.240,54 </strong>
             </div>
-            <div class="card-actions">
-              <a href="/editar-conta.html" >
-                <svg>
-                  <use href="/icons.svg#edit"/>
-                </svg>
-                Editar
-              </a >
-              <a href="/excluir-conta.html" >
-                <svg>
-                  <use href="/icons.svg#trash"/>
-                </svg>
-                Excluir
-              </a >
+            <div class="acoes-cartao">
+              <a href="./editar-conta.html"> Editar </a>
+              <a href="./excluir-conta.html"> Excluir </a>
             </div>
           </article>
-          <article class="account-card">
-            <svg style="background: #0a3c6e">
-              <use href="/icons.svg#bank"/>
-            </svg>
-            <p>
-              BANCO HORIZONTE
-            </p>
-            <h3>
-              Reserva
-            </h3>
-            <small>
-              Conta poupança
-            </small>
-            <div class="balance">
-              <span>
-                Saldo atual
-              </span>
-              <strong>
-                R$ 12.750,00
-              </strong>
+          <article class="cartao-conta">
+            <p>BANCO HORIZONTE</p>
+            <h3>Reserva</h3>
+            <small> Conta poupança </small>
+            <div class="saldo">
+              <span> Saldo atual </span>
+              <strong> R$ 12.750,00 </strong>
             </div>
-            <div class="card-actions">
-              <a href="/editar-conta.html" >
-                <svg>
-                  <use href="/icons.svg#edit"/>
-                </svg>
-                Editar
-              </a >
-              <a href="/excluir-conta.html" >
-                <svg>
-                  <use href="/icons.svg#trash"/>
-                </svg>
-                Excluir
-              </a >
+            <div class="acoes-cartao">
+              <a href="./editar-conta.html"> Editar </a>
+              <a href="./excluir-conta.html"> Excluir </a>
             </div>
           </article>
-          <article class="account-card">
-            <svg style="background: #5c6d7e">
-              <use href="/icons.svg#wallet"/>
-            </svg>
-            <p>
-              CONTA PERSONALIZADA
-            </p>
-            <h3>
-              Carteira
-            </h3>
-            <small>
-              Dinheiro em espécie
-            </small>
-            <div class="balance">
-              <span>
-                Saldo atual
-              </span>
-              <strong>
-                R$ 320,00
-              </strong>
+          <article class="cartao-conta">
+            <p>CONTA PERSONALIZADA</p>
+            <h3>Carteira</h3>
+            <small> Dinheiro em espécie </small>
+            <div class="saldo">
+              <span> Saldo atual </span>
+              <strong> R$ 320,00 </strong>
             </div>
-            <div class="card-actions">
-              <a href="/editar-conta.html" >
-                <svg>
-                  <use href="/icons.svg#edit"/>
-                </svg>
-                Editar
-              </a >
-              <a href="/excluir-conta.html" >
-                <svg>
-                  <use href="/icons.svg#trash"/>
-                </svg>
-                Excluir
-              </a >
+            <div class="acoes-cartao">
+              <a href="./editar-conta.html"> Editar </a>
+              <a href="./excluir-conta.html"> Excluir </a>
             </div>
           </article>
         </section>

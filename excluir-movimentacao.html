@@ -6,46 +6,45 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Excluir movimentação — Mercurius</title>
   </head>
-  <body class="app-body">
-    <aside class="sidebar">
-      <a class="logo light" href="/"><span>M</span>Mercurius</a
-      ><a class="new-action" href="/nova-movimentacao.html">＋ Nova movimentação</a>
-      <nav class="side-nav">
-        <a href="/dashboard.html"
-          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
-        ><a href="/contas.html"
-          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
-        ><a href="/cartoes.html"
-          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
-        ><a href="/produtos.html"
-          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
-        ><a class="active" href="/movimentacoes.html"
-          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
-        ><a href="/configuracoes.html"
-          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
-        >
+  <body class="corpo-aplicativo">
+    <aside class="barra-lateral">
+      <a class="logo claro" href="./index.html">
+        <span> M </span>
+        Mercurius
+      </a>
+      <a class="nova-acao" href="./nova-movimentacao.html">
+        + Nova movimentação
+      </a>
+      <nav class="navegacao-lateral">
+        <a href="./dashboard.html"> Visão geral </a>
+        <a href="./contas.html"> Contas </a>
+        <a href="./cartoes.html"> Cartões </a>
+        <a href="./produtos.html"> Produtos </a>
+        <a class="ativo" href="./movimentacoes.html"> Movimentações </a>
+        <a href="./configuracoes.html"> Configurações </a>
       </nav>
-      <div class="sync-box">
-        <svg><use href="/icons.svg#shield" /></svg>
-        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
-      </div>
+      <a class="sair" href="./login.html"> ← Sair da conta </a>
     </aside>
-    <div class="app record-app">
-      <header class="record-header">
-        <a class="logo" href="/dashboard.html"><span>M</span>Mercurius</a
-        ><a href="/movimentacoes.html">Cancelar</a>
+    <div class="aplicativo aplicativo-registro">
+      <header class="cabecalho-registro">
+        <a class="logo" href="./dashboard.html">
+          <span> M </span>
+          Mercurius
+        </a>
+        <a href="./movimentacoes.html"> Cancelar </a>
       </header>
-      <main class="record-main">
-        <section class="record-card danger-card">
-          <svg><use href="/icons.svg#trash" /></svg>
+      <main class="principal-registro">
+        <section class="cartao-registro cartao-perigo">
           <h1>Excluir esta movimentação?</h1>
           <p>
-            A movimentação selecionada será removida permanentemente e deixará de aparecer nos
-            resumos financeiros.
+            A movimentação selecionada será removida permanentemente e deixará
+            de aparecer nos resumos financeiros.
           </p>
-          <div class="record-actions">
-            <a class="button outline" href="/movimentacoes.html">Cancelar</a
-            ><a class="button danger" href="/movimentacoes.html">Confirmar exclusão</a>
+          <div class="acoes-registro">
+            <a class="botao contorno" href="./movimentacoes.html"> Cancelar </a>
+            <a class="botao perigo" href="./movimentacoes.html">
+              Confirmar exclusão
+            </a>
           </div>
         </section>
       </main>

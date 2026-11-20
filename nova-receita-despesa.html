@@ -6,73 +6,85 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Receita ou despesa — Mercurius</title>
   </head>
-  <body class="app-body">
-    <aside class="sidebar">
-      <a class="logo light" href="/"><span>M</span>Mercurius</a
-      ><a class="new-action" href="/nova-movimentacao.html">＋ Nova movimentação</a>
-      <nav class="side-nav">
-        <a href="/dashboard.html"
-          ><svg><use href="/icons.svg#home" /></svg>Visão geral</a
-        ><a href="/contas.html"
-          ><svg><use href="/icons.svg#wallet" /></svg>Contas</a
-        ><a href="/cartoes.html"
-          ><svg><use href="/icons.svg#card" /></svg>Cartões</a
-        ><a href="/produtos.html"
-          ><svg><use href="/icons.svg#box" /></svg>Produtos</a
-        ><a class="active" href="/movimentacoes.html"
-          ><svg><use href="/icons.svg#swap" /></svg>Movimentações</a
-        ><a href="/configuracoes.html"
-          ><svg><use href="/icons.svg#settings" /></svg>Configurações</a
-        >
+  <body class="corpo-aplicativo">
+    <aside class="barra-lateral">
+      <a class="logo claro" href="./index.html">
+        <span> M </span>
+        Mercurius
+      </a>
+      <a class="nova-acao" href="./nova-movimentacao.html">
+        + Nova movimentação
+      </a>
+      <nav class="navegacao-lateral">
+        <a href="./dashboard.html"> Visão geral </a>
+        <a href="./contas.html"> Contas </a>
+        <a href="./cartoes.html"> Cartões </a>
+        <a href="./produtos.html"> Produtos </a>
+        <a class="ativo" href="./movimentacoes.html"> Movimentações </a>
+        <a href="./configuracoes.html"> Configurações </a>
       </nav>
-      <div class="sync-box">
-        <svg><use href="/icons.svg#shield" /></svg>
-        <div><b>Dados protegidos</b><small>Dados atualizados</small></div>
-      </div>
+      <a class="sair" href="./login.html"> ← Sair da conta </a>
     </aside>
-    <div class="app record-app">
-      <header class="record-header">
-        <a class="logo" href="/dashboard.html"><span>M</span>Mercurius</a
-        ><a href="/movimentacoes.html">Cancelar</a>
+    <div class="aplicativo aplicativo-registro">
+      <header class="cabecalho-registro">
+        <a class="logo" href="./dashboard.html">
+          <span> M </span>
+          Mercurius
+        </a>
+        <a href="./movimentacoes.html"> Cancelar </a>
       </header>
-      <main class="record-main">
-        <div class="record-title">
-          <a href="/nova-movimentacao.html">← Alterar tipo</a>
+      <main class="principal-registro">
+        <div class="titulo-registro">
+          <a href="./nova-movimentacao.html"> ← Alterar tipo </a>
           <h1>Receita ou despesa</h1>
           <p>Registre um valor ligado às compras de alimentos.</p>
         </div>
-        <form class="record-card" action="/movimentacoes.html">
-          <div class="form-grid">
-            <label
-              >Tipo<select required>
+        <form class="cartao-registro" action="./movimentacoes.html">
+          <div class="grade-formulario">
+            <label>
+              Tipo
+              <select required>
                 <option>Receita</option>
                 <option>Despesa</option>
-              </select></label
-            ><label
-              >Categoria<select>
+              </select>
+            </label>
+            <label>
+              Categoria
+              <select>
                 <option>Alimentação</option>
                 <option>Hortifruti</option>
                 <option>Padaria</option>
                 <option>Mercearia</option>
-              </select></label
-            ><label class="full"
-              >Descrição<input
+              </select>
+            </label>
+            <label class="completo">
+              Descrição
+              <input
                 required
                 maxlength="500"
-                placeholder="Descreva a movimentação" /></label
-            ><label>Valor<input type="number" required min=".01" step=".01" /></label
-            ><label>Data<input type="date" required /></label
-            ><label class="full"
-              >Conta associada<select required>
+                placeholder="Descreva a movimentação"
+              />
+            </label>
+            <label>
+              Valor
+              <input type="number" required min=".01" step=".01" />
+            </label>
+            <label>
+              Data
+              <input type="date" required />
+            </label>
+            <label class="completo">
+              Conta associada
+              <select required>
                 <option>Conta principal</option>
                 <option>Reserva</option>
                 <option>Carteira</option>
-              </select></label
-            >
+              </select>
+            </label>
           </div>
-          <div class="record-actions">
-            <a class="button outline" href="/movimentacoes.html">Cancelar</a
-            ><button class="button primary">Salvar movimentação</button>
+          <div class="acoes-registro">
+            <a class="botao contorno" href="./movimentacoes.html"> Cancelar </a>
+            <button class="botao primario">Salvar movimentação</button>
           </div>
         </form>
       </main>
