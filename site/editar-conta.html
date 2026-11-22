@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Adicionar conta — Mercurius</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <title>Editar conta — Mercurius</title>
   </head>
   <body class="corpo-aplicativo">
     <aside class="barra-lateral">
@@ -36,25 +36,20 @@
       <main class="principal-registro">
         <div class="titulo-registro">
           <a href="./contas.html"> ← Voltar para contas </a>
-          <h1>Adicionar conta</h1>
-          <p>Cadastre uma conta bancária, carteira ou investimento.</p>
+          <h1>Editar conta</h1>
+          <p>Atualize as informações da conta selecionada.</p>
         </div>
         <form class="cartao-registro" action="./contas.html">
           <div class="grade-formulario">
             <label class="completo">
               Descrição da conta
-              <input
-                required
-                maxlength="150"
-                placeholder="Ex.: Conta principal"
-              />
+              <input required value="Conta principal" >
             </label>
             <label>
               Instituição
               <select>
                 <option>Banco Aurora</option>
                 <option>Banco Horizonte</option>
-                <option>Instituição personalizada</option>
               </select>
             </label>
             <label>
@@ -62,20 +57,17 @@
               <select>
                 <option>Corrente</option>
                 <option>Poupança</option>
-                <option>Salário</option>
                 <option>Investimento</option>
-                <option>Carteira</option>
-                <option>Outro</option>
               </select>
             </label>
             <label class="completo">
               Saldo atual
-              <input type="number" required step="0.01" value="0.00" />
+              <input type="number" required step="0.01" value="8240.54" >
             </label>
           </div>
           <div class="acoes-registro">
             <a class="botao contorno" href="./contas.html"> Cancelar </a>
-            <button class="botao primario">Salvar conta</button>
+            <button class="botao primario">Salvar alterações</button>
           </div>
         </form>
       </main>

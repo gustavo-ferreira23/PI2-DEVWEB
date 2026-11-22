@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Editar cartão — Mercurius</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <title>Adicionar cartão — Mercurius</title>
   </head>
   <body class="corpo-aplicativo">
     <aside class="barra-lateral">
@@ -36,14 +36,14 @@
       <main class="principal-registro">
         <div class="titulo-registro">
           <a href="./cartoes.html"> ← Voltar para cartões </a>
-          <h1>Editar cartão</h1>
-          <p>Atualize limite, conta e datas do cartão.</p>
+          <h1>Adicionar cartão</h1>
+          <p>Vincule o cartão a uma das suas contas.</p>
         </div>
         <form class="cartao-registro" action="./cartoes.html">
           <div class="grade-formulario">
             <label class="completo">
               Descrição do cartão
-              <input required value="Cartão Azul" />
+              <input required placeholder="Ex.: Cartão principal" >
             </label>
             <label>
               Conta vinculada
@@ -55,27 +55,30 @@
             <label>
               Bandeira
               <select>
-                <option>Mastercard</option>
                 <option>Visa</option>
+                <option>Mastercard</option>
+                <option>Elo</option>
+                <option>American Express</option>
+                <option>Hipercard</option>
                 <option>Outra</option>
               </select>
             </label>
             <label>
               Limite
-              <input type="number" required step=".01" value="6500" />
+              <input type="number" required step=".01" >
             </label>
             <label>
               Dia de fechamento
-              <input type="number" required min="1" max="31" value="18" />
+              <input type="number" required min="1" max="31" >
             </label>
             <label>
               Dia de vencimento
-              <input type="number" required min="1" max="31" value="25" />
+              <input type="number" required min="1" max="31" >
             </label>
           </div>
           <div class="acoes-registro">
             <a class="botao contorno" href="./cartoes.html"> Cancelar </a>
-            <button class="botao primario">Salvar alterações</button>
+            <button class="botao primario">Salvar cartão</button>
           </div>
         </form>
       </main>

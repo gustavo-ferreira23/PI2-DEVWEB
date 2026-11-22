@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Nova compra — Mercurius</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <title>Receita ou despesa — Mercurius</title>
   </head>
   <body class="corpo-aplicativo">
     <aside class="barra-lateral">
@@ -36,26 +36,17 @@
       <main class="principal-registro">
         <div class="titulo-registro">
           <a href="./nova-movimentacao.html"> ← Alterar tipo </a>
-          <h1>Registrar compra</h1>
-          <p>Registre uma compra de alimentos.</p>
+          <h1>Receita ou despesa</h1>
+          <p>Registre um valor ligado às compras de alimentos.</p>
         </div>
         <form class="cartao-registro" action="./movimentacoes.html">
           <div class="grade-formulario">
-            <label class="completo">
-              Descrição
-              <input
-                required
-                maxlength="500"
-                placeholder="Ex.: Compras da semana"
-              />
-            </label>
             <label>
-              Nome da loja
-              <input
-                required
-                maxlength="150"
-                placeholder="Ex.: Mercado do Bairro"
-              />
+              Tipo
+              <select required>
+                <option value="">Receita</option>
+                <option>Despesa</option>
+              </select>
             </label>
             <label>
               Categoria
@@ -66,34 +57,34 @@
                 <option>Mercearia</option>
               </select>
             </label>
+            <label class="completo">
+              Descrição
+              <input
+                required
+                maxlength="500"
+                placeholder="Descreva a movimentação"
+              >
+            </label>
             <label>
               Valor
-              <input type="number" required min=".01" step=".01" />
+              <input type="number" required min=".01" step=".01" >
             </label>
             <label>
               Data
-              <input type="date" required />
+              <input type="date" required >
             </label>
-            <label>
+            <label class="completo">
               Conta associada
               <select required>
-                <option>Conta principal</option>
+                <option value="">Conta principal</option>
                 <option>Reserva</option>
-              </select>
-            </label>
-            <label>
-              Cartão associado
-              <small> (opcional) </small>
-              <select>
-                <option>Sem cartão</option>
-                <option>Cartão Azul</option>
-                <option>Cartão Essencial</option>
+                <option>Carteira</option>
               </select>
             </label>
           </div>
           <div class="acoes-registro">
             <a class="botao contorno" href="./movimentacoes.html"> Cancelar </a>
-            <button class="botao primario">Salvar compra</button>
+            <button class="botao primario">Salvar movimentação</button>
           </div>
         </form>
       </main>

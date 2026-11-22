@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Editar conta — Mercurius</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <title>Editar cartão — Mercurius</title>
   </head>
   <body class="corpo-aplicativo">
     <aside class="barra-lateral">
@@ -17,8 +17,8 @@
       </a>
       <nav class="navegacao-lateral">
         <a href="./dashboard.html"> Visão geral </a>
-        <a class="ativo" href="./contas.html"> Contas </a>
-        <a href="./cartoes.html"> Cartões </a>
+        <a href="./contas.html"> Contas </a>
+        <a class="ativo" href="./cartoes.html"> Cartões </a>
         <a href="./produtos.html"> Produtos </a>
         <a href="./movimentacoes.html"> Movimentações </a>
         <a href="./configuracoes.html"> Configurações </a>
@@ -31,42 +31,50 @@
           <span> M </span>
           Mercurius
         </a>
-        <a href="./contas.html"> Cancelar </a>
+        <a href="./cartoes.html"> Cancelar </a>
       </header>
       <main class="principal-registro">
         <div class="titulo-registro">
-          <a href="./contas.html"> ← Voltar para contas </a>
-          <h1>Editar conta</h1>
-          <p>Atualize as informações da conta selecionada.</p>
+          <a href="./cartoes.html"> ← Voltar para cartões </a>
+          <h1>Editar cartão</h1>
+          <p>Atualize limite, conta e datas do cartão.</p>
         </div>
-        <form class="cartao-registro" action="./contas.html">
+        <form class="cartao-registro" action="./cartoes.html">
           <div class="grade-formulario">
             <label class="completo">
-              Descrição da conta
-              <input required value="Conta principal" />
+              Descrição do cartão
+              <input required value="Cartão Azul" >
             </label>
             <label>
-              Instituição
+              Conta vinculada
               <select>
-                <option>Banco Aurora</option>
-                <option>Banco Horizonte</option>
+                <option>Conta principal</option>
+                <option>Reserva</option>
               </select>
             </label>
             <label>
-              Tipo de conta
+              Bandeira
               <select>
-                <option>Corrente</option>
-                <option>Poupança</option>
-                <option>Investimento</option>
+                <option>Mastercard</option>
+                <option>Visa</option>
+                <option>Outra</option>
               </select>
             </label>
-            <label class="completo">
-              Saldo atual
-              <input type="number" required step="0.01" value="8240.54" />
+            <label>
+              Limite
+              <input type="number" required step=".01" value="6500" >
+            </label>
+            <label>
+              Dia de fechamento
+              <input type="number" required min="1" max="31" value="18" >
+            </label>
+            <label>
+              Dia de vencimento
+              <input type="number" required min="1" max="31" value="25" >
             </label>
           </div>
           <div class="acoes-registro">
-            <a class="botao contorno" href="./contas.html"> Cancelar </a>
+            <a class="botao contorno" href="./cartoes.html"> Cancelar </a>
             <button class="botao primario">Salvar alterações</button>
           </div>
         </form>

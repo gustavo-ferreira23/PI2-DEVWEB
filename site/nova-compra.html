@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Nova transferência — Mercurius</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <title>Nova compra — Mercurius</title>
   </head>
   <body class="corpo-aplicativo">
     <aside class="barra-lateral">
@@ -36,8 +36,8 @@
       <main class="principal-registro">
         <div class="titulo-registro">
           <a href="./nova-movimentacao.html"> ← Alterar tipo </a>
-          <h1>Transferência entre contas</h1>
-          <p>Informe as contas de origem e destino.</p>
+          <h1>Registrar compra</h1>
+          <p>Registre uma compra de alimentos.</p>
         </div>
         <form class="cartao-registro" action="./movimentacoes.html">
           <div class="grade-formulario">
@@ -46,37 +46,53 @@
               <input
                 required
                 maxlength="500"
-                placeholder="Ex.: Aporte mensal"
-              />
+                placeholder="Ex.: Compras da semana"
+              >
             </label>
             <label>
-              Valor
-              <input type="number" required min=".01" step=".01" />
+              Nome da loja
+              <input
+                required
+                maxlength="150"
+                placeholder="Ex.: Mercado do Bairro"
+              >
             </label>
             <label>
-              Data
-              <input type="date" required />
-            </label>
-            <label>
-              Conta de origem
-              <select required>
-                <option>Conta principal</option>
-                <option>Reserva</option>
-                <option>Carteira</option>
+              Categoria
+              <select>
+                <option>Alimentação</option>
+                <option>Hortifruti</option>
+                <option>Padaria</option>
+                <option>Mercearia</option>
               </select>
             </label>
             <label>
-              Conta de destino
+              Valor
+              <input type="number" required min=".01" step=".01" >
+            </label>
+            <label>
+              Data
+              <input type="date" required >
+            </label>
+            <label>
+              Conta associada
               <select required>
-                <option>Reserva</option>
-                <option>Conta principal</option>
-                <option>Carteira</option>
+                <option value="">Conta principal</option>
+                <option> Reserva</option>
+              </select>
+            </label>
+            <label>
+              <span>Cartão associado <small>(opcional)</small></span>
+              <select>
+                <option>Sem cartão</option>
+                <option>Cartão Azul</option>
+                <option>Cartão Essencial</option>
               </select>
             </label>
           </div>
           <div class="acoes-registro">
             <a class="botao contorno" href="./movimentacoes.html"> Cancelar </a>
-            <button class="botao primario">Salvar transferência</button>
+            <button class="botao primario">Salvar compra</button>
           </div>
         </form>
       </main>
